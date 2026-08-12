@@ -35,7 +35,24 @@ body {
 .hero {
     min-height: 100vh;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 80px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.hero-image {
+    flex-shrink: 0;
 }
 
 .hero h1 {
