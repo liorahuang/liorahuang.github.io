@@ -361,6 +361,28 @@ footer {
     display:block;
 }
 
+.project-images{
+    margin-top:60px;
+}
+
+.project-images{
+    margin-top:60px;
+}
+
+.project-images img{
+    width:100%;
+    aspect-ratio:16 / 9;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+}
+
+.image-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    margin-top:24px;
+}
 
 .placeholder{
 
