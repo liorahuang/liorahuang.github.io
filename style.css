@@ -1067,3 +1067,29 @@ footer {
     column-count: 1;
   }
 }
+
+
+
+/* Make 04.2 account screenshots smaller */
+
+.creator-phone img {
+    max-width: 220px;
+}
+
+.creator-project {
+    padding: 42px;
+}
+
+.creator-phone {
+    margin-bottom: 32px;
+}
+
+
+
+.social-two-phone-grid .social-phone-card {
+    align-items: center;
+}
+
+.social-two-phone-grid .social-phone-card img {
+    max-width: 220px;
+}
