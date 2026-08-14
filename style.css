@@ -639,18 +639,18 @@ footer {
 /* lululemon hero image */
 
 .lululemon-hero-image {
-    width: 520px;
-    max-width: 48%;
+    flex: 1;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
+    margin-left: 70px;
 }
 
 .lululemon-hero-image img {
-    width: 100%;
+    width: 620px;
+    max-width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9;
     object-fit: contain;
-    border-radius: 20px;
+    border-radius: 22px;
     display: block;
 }
