@@ -805,3 +805,265 @@ footer {
     }
 
 }
+
+
+
+/* =========================
+   SOCIAL MEDIA & AI
+========================= */
+
+.social-case-section {
+  padding-top: 120px;
+}
+
+.section-kicker {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  margin-bottom: 28px;
+}
+
+.social-project-block {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.social-project-head {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.social-project-head h2 {
+  font-size: 44px;
+  line-height: 1.08;
+  font-weight: 700;
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.section-intro {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+  max-width: 760px;
+}
+
+.social-project-note {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #666;
+  padding: 22px 24px;
+  border: 1px solid #e8e8e8;
+  border-radius: 18px;
+  background: #fafafa;
+}
+
+/* phone showcase */
+.social-phone-showcase {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.social-phone-card {
+  background: #f6f6f6;
+  border-radius: 28px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 1px solid #ececec;
+}
+
+.social-phone-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 22px;
+}
+
+.social-phone-copy h3,
+.social-phone-meta h3 {
+  font-size: 24px;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.social-phone-copy p,
+.social-phone-meta p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+/* 04.2 two-phone layout */
+.social-two-phone-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+
+.social-phone-meta {
+  padding-top: 2px;
+}
+
+/* 04.1 slide stack */
+.social-slide-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.social-slide-card {
+  margin: 0;
+  padding: 22px;
+  background: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 22px;
+}
+
+.social-slide-card figcaption {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b8b8b;
+  margin-bottom: 14px;
+}
+
+.social-slide-card img {
+  width: 100%;
+  max-width: 980px;   /* 限制图片最大宽度，避免太大 */
+  height: auto;
+  display: block;
+  margin: 0 auto;     /* 图片居中 */
+  border-radius: 14px;
+}
+
+/* =========================
+   04.3 masonry gallery
+========================= */
+
+.creative-portfolio-section {
+  margin-top: 120px;
+}
+
+.creative-heading {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 36px;
+}
+
+.creative-heading h2 {
+  font-size: 44px;
+  line-height: 1.08;
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.creative-statement {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  text-align: right;
+  margin: 0;
+}
+
+.creative-masonry {
+  column-count: 3;
+  column-gap: 22px;
+}
+
+.creative-item {
+  break-inside: avoid;
+  margin-bottom: 22px;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.creative-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.creative-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px 18px;
+  background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0));
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+.creative-item:hover .creative-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.creative-caption h3 {
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0 0 6px;
+}
+
+.creative-caption p {
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0;
+  color: rgba(255,255,255,0.88);
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  .social-project-head,
+  .social-phone-showcase,
+  .social-two-phone-grid,
+  .creative-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .creative-statement {
+    text-align: left;
+  }
+
+  .creative-masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .social-project-head h2,
+  .creative-heading h2 {
+    font-size: 32px;
+  }
+
+  .social-phone-showcase {
+    gap: 28px;
+  }
+
+  .social-slide-card {
+    padding: 16px;
+  }
+
+  .creative-masonry {
+    column-count: 1;
+  }
+}
