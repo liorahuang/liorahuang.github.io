@@ -654,3 +654,154 @@ footer {
     border-radius: 22px;
     display: block;
 }
+
+
+
+/* =========================================================
+   04.3 AI-ASSISTED CREATIVE PORTFOLIO
+   ========================================================= */
+
+
+.creative-portfolio-section {
+    padding-top: 140px;
+}
+
+
+.creative-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 80px;
+    margin-bottom: 65px;
+}
+
+
+.creative-heading > div {
+    max-width: 760px;
+}
+
+
+.creative-statement {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+
+/* MASONRY GALLERY */
+
+
+.masonry-gallery {
+    column-count: 3;
+    column-gap: 22px;
+}
+
+
+.masonry-item {
+    position: relative;
+    break-inside: avoid;
+    margin-bottom: 22px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #f4f4f4;
+}
+
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+
+/* HOVER CAPTION */
+
+
+.masonry-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 28px;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,0.82),
+            rgba(0,0,0,0.18) 48%,
+            rgba(0,0,0,0) 78%
+        );
+
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+
+.masonry-overlay h3 {
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 1.2;
+    margin: 0 0 6px;
+}
+
+
+.masonry-overlay p {
+    color: rgba(255,255,255,0.78);
+    font-size: 13px;
+    line-height: 1.45;
+    margin: 0;
+}
+
+
+.masonry-item:hover .masonry-overlay {
+    opacity: 1;
+}
+
+
+.masonry-item:hover img {
+    transform: scale(1.035);
+}
+
+
+/* TABLET */
+
+
+@media (max-width: 1000px) {
+
+    .masonry-gallery {
+        column-count: 2;
+    }
+
+}
+
+
+/* MOBILE */
+
+
+@media (max-width: 650px) {
+
+    .creative-heading {
+        display: block;
+    }
+
+    .creative-statement {
+        text-align: left;
+        margin-top: 28px;
+        white-space: normal;
+    }
+
+    .masonry-gallery {
+        column-count: 1;
+    }
+
+    /* 手机上没有 hover，因此直接显示 caption */
+
+    .masonry-overlay {
+        opacity: 1;
+    }
+
+}
