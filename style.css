@@ -1073,7 +1073,7 @@ footer {
 /* Make 04.2 account screenshots smaller */
 
 .creator-phone img {
-    max-width: 220px;
+    max-width: 280px;
 }
 
 .creator-project {
@@ -1091,7 +1091,7 @@ footer {
 }
 
 .social-two-phone-grid .social-phone-card img {
-    max-width: 220px;
+    max-width: 280px;
 }
 
 
@@ -1173,14 +1173,14 @@ footer {
 }
 
 .social-hero-image {
-    flex: 0 0 54%;
-    width: 54%;
+    flex: 0 0 58%;
+    width: 58%;
     max-width: none;
 }
 
 .social-hero-image img {
     width: 100%;
-    max-width: 680px;
+    max-width: 760px;
     height: auto;
     display: block;
     object-fit: contain;
