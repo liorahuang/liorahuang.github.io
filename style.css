@@ -1161,3 +1161,47 @@ footer {
     }
 
 }
+
+
+
+/* =========================================
+   Social Media Hero
+========================================= */
+
+.social-case-hero {
+    align-items: center;
+}
+
+.social-hero-image {
+    flex: 0 0 54%;
+    width: 54%;
+    max-width: none;
+}
+
+.social-hero-image img {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 22px;
+}
+
+@media (max-width: 900px) {
+
+    .social-case-hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-hero-image {
+        width: 100%;
+        flex: none;
+        margin-top: 40px;
+    }
+
+    .social-hero-image img {
+        max-width: 100%;
+    }
+
+}
