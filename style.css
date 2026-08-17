@@ -1168,24 +1168,73 @@ footer {
    Social Media Hero
 ========================================= */
 
-.social-case-hero {
+/* =========================================
+   Social Media Hero - Final Size Fix
+========================================= */
+
+.case-hero.social-case-hero {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 56px;
 }
 
-.social-hero-image {
-    flex: 0 0 58%;
-    width: 58%;
+.case-hero.social-case-hero .case-hero-text {
+    flex: 0 0 44%;
+    max-width: 520px;
+}
+
+.case-hero.social-case-hero .social-hero-image {
+    flex: 0 0 50%;
+    width: 50%;
     max-width: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.social-hero-image img {
+.case-hero.social-case-hero .social-hero-image img {
     width: 100%;
-    max-width: 760px;
+    max-width: 720px;
+    min-width: 460px;
     height: auto;
-    display: block;
+    aspect-ratio: 16 / 9;
     object-fit: contain;
+    display: block;
     border-radius: 22px;
 }
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .case-hero.social-case-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .case-hero.social-case-hero .case-hero-text {
+        flex: none;
+        max-width: 100%;
+    }
+
+    .case-hero.social-case-hero .social-hero-image {
+        width: 100%;
+        flex: none;
+        justify-content: flex-start;
+    }
+
+    .case-hero.social-case-hero .social-hero-image img {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+}
+
+
 
 @media (max-width: 900px) {
 
