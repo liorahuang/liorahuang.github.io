@@ -1356,3 +1356,82 @@ footer {
     }
 
 }
+
+
+
+/* =========================================
+   Homepage Closing CTA
+========================================= */
+
+.closing-cta {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 0 110px;
+}
+
+.closing-cta-inner {
+    padding-top: 55px;
+    border-top: 1px solid #e2e2e2;
+}
+
+.closing-cta-label {
+    margin: 0 0 22px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #999;
+}
+
+.closing-cta h2 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1.3px;
+}
+
+.closing-cta-copy {
+    max-width: 590px;
+    margin: 20px 0 32px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.closing-cta-links {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.closing-link {
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.closing-link:hover {
+    opacity: 0.55;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .closing-cta {
+        padding: 20px 24px 80px;
+    }
+
+    .closing-cta h2 {
+        font-size: 34px;
+    }
+
+    .closing-cta-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+}
