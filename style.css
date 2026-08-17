@@ -1093,3 +1093,71 @@ footer {
 .social-two-phone-grid .social-phone-card img {
     max-width: 220px;
 }
+
+
+
+/* AI Cocktail Lab account screenshot */
+
+.social-phone-showcase .social-phone-card {
+    padding: 18px;
+    max-width: 300px;
+}
+
+.social-phone-showcase .social-phone-card img {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    object-fit: contain;
+    display: block;
+    border-radius: 20px;
+}
+
+
+
+/* =========================================
+   Shared Case Study Footer
+========================================= */
+
+.case-end {
+    max-width: 1140px;
+    margin: 130px auto 0;
+    padding-top: 50px;
+    border-top: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.case-end p {
+    margin: 0;
+    color: #777;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.case-end a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.case-end a:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+
+    .case-end {
+        display: block;
+        margin-top: 90px;
+    }
+
+    .case-end a {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+}
